@@ -2,7 +2,7 @@
 This is the 2nd project for High Immersion Unity VR at HMD VR Projects at Udacity to build up the fine performance Bounceback game.
 The major mission of this project is to use profiler tools to identify promblemetic code, 
 correct them and improve the performance of this game to play comfortably base on the following 8 checking and correcting items on this game:
-* Using static and dynamic batching
+* Reducing draw calls by using static and dynamic batching
 * Optimizing Physics
 * Creating object pools
 * Caching variables and optimizing code
@@ -17,10 +17,14 @@ correct them and improve the performance of this game to play comfortably base o
 3. 
 
 # How to tune the performance of this game up
-## Using static and dynamic batching
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
+## Reducing draw calls by enabling both static and dynamic batching
+>> <li> <B>Performance tunning action 1. </B> Enabling Static batching at all grounded and non-moving objects:</li>
+>> 288 Grounded Trampoline objects, Platform, Ground, Factory structure, Cube, and Ball Spawner. 
+>> <li> <B>Performance tunning action 2. </B> Enabling Dynamic batching at all moving objects:</li>
+>> Air Trampoline objects, Lights, and Camera. 
+>> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Enabling%20batching%20Screenshot1.JPG) </li>
+>> <li> <B>Improved result: </B></li>
+>> Saved by batching from 0 to 1087.
 
 ## Optimizing Physics
 >> <li> Action Item 1. with screenshots </li>
@@ -76,7 +80,7 @@ There
 
 ## Free Assets to download from online Store for this game. 
 - Downloaded prefabs from Unity Asset Store;
->> (1) Tube constructor Kit prefabs, Environments > Urban,https://deployer117.deviantart.com/
+>> (1) Tube constructor Kit prefabs, Environments, Urban, https://deployer117.deviantart.com/
 - Download FX Sound from Unity Asset Store;
 >> (1) FREE Casual Game SFX Pack from dustyroom.com, UX/UI sounds, 24-bit WAV format, 44.1 kHz Stereo.
 - Download Background Music from Unity Asset Store;
