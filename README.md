@@ -22,7 +22,7 @@ correct them and improve the performance of this game to play comfortably base o
 >> 288 Grounded Trampoline objects, Platform, Ground, Factory structure, Cube, and Ball Spawner. 
 >> <li> <B>Performance tunning action 2. </B> Enabling Dynamic batching at all moving objects:</li>
 >> Air Trampoline objects, Lights, and Camera. 
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Enabling%20batching%20Screenshot1.JPG) </li>
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Enabling%20batching%20Screenshot1.JPG)
 >> <li> <B>Improved result: </B></li>
 >> Saved by batching from 0 to 1087.
 
