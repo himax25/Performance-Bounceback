@@ -23,8 +23,8 @@ correct them and improve the performance of this game to play comfortably base o
 >> <li> <B>Performance tunning action 2. </B> Enabling Dynamic batching at all moving objects:</li>
 >> Air Trampoline objects, Lights, and Camera. 
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Enabling%20batching%20Screenshot1.JPG)
->> <li> <B>Improved result: </B></li>
->> Saved by batching from 0 to 1087.
+>> <li> <B>Result: </B></li>
+>> Saved by batching from 0 to 1087, and the total number of Batches has been dropped from 1421 to 572. However, the frame rate has still not reached at 90 FPS. 
 
 ## Optimizing Physics
 >> <li> Action Item 1. with screenshots </li>
