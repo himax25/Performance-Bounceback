@@ -21,15 +21,19 @@ correct them and improve the performance of this game to play comfortably base o
 >> <li> <B>Performance tunning action 1. </B> Enabling Static batching at all grounded and non-moving objects:</li>
 >> 288 Grounded Trampoline objects, Platform, Ground, Factory structure, Cube, and Ball Spawner. 
 >> <li> <B>Performance tunning action 2. </B> Enabling Dynamic batching at all moving objects:</li>
->> Air Trampoline objects, Lights, and Camera. 
+>> 48 Air Trampoline objects, Lights, and Camera. 
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Enabling%20batching%20Screenshot1.JPG)
 >> <li> <B>Result: </B></li>
 >> Saved by batching from 0 to 834, and the total number of Batches has been dropped from 1421 to 604. However, the frame rate, 67.9 FPS, has still not reached at 90 FPS. 
 
-## Optimizing Physics
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
+## Reducing calculation time by optimizing Physics with Rigidbody components
+>> <li> <B>Performance tunning action 1. </B> Removing Rigidbody component from all Static collider game objects:</li>
+>> 288 Grounded Trampoline objects. 
+>> <li> <B>Performance tunning action 2. </B> Adding Rigidibody component on all moving collider game objects:</li>
+>> 48 Air Trampoline objects. 
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Physics%20Screenshot2.JPG)
+>> <li> <B>Result: </B></li>
+>> Saved by batching from 834 to 956, and the total number of Batches has been dropped from 604 to 566. However, the frame rate, 49.8 FPS, has still not reached at 90 FPS. 
 
 ## Creating object pools
 >> <li> Action Item 1. with screenshots </li>
