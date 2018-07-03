@@ -24,7 +24,7 @@ correct them and improve the performance of this game to play comfortably base o
 >> 48 Air Trampoline objects, Lights, and Camera. 
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Enabling%20batching%20Screenshot1.JPG)
 >> <li> <B>Result: </B></li>
->> Saved by batching from 0 to 834, and the total number of Batches has been dropped from 1421 to 604. However, the frame rate, 67.9 FPS, has still not reached at 90 FPS. 
+>> Saved by batching from 0 to 983, and the total number of Batches has been dropped from 1904 to 813. However, the frame rate, 45.4 FPS, has still not reached at 90 FPS. 
 
 ## Reducing calculation time by optimizing Physics with Rigidbody components
 >> <li> <B>Performance tunning action 1. </B> Removing Rigidbody component from all Static collider game objects:</li>
@@ -33,7 +33,7 @@ correct them and improve the performance of this game to play comfortably base o
 >> 48 Air Trampoline objects. 
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Physics%20Screenshot2.JPG)
 >> <li> <B>Result: </B></li>
->> Saved by batching from 834 to 956, and the total number of Batches has been dropped from 604 to 566. However, the frame rate, 49.8 FPS, has still not reached at 90 FPS. 
+>> Saved by batching from 983 to 1029, and the total number of Batches has been dropped from 813 to 640. However, the frame rate, 46.1 FPS, has still not reached at 90 FPS. 
 
 ## Creating object pools
 >> <li> Action Item 1. with screenshots </li>
@@ -79,7 +79,7 @@ There
 ## Versions
 - Unity 2017.2.0f3
 - GVR Unity SDK v1.60.0
-- SteamVR Build Vesion 1527117754.
+- Oculus Utilities for Unity, OVRPlugin v1.27.0 & Bundled version 1.14.1
 - Test Platform: Windows 10 Home Edition 64 Bit OS /w Oculus Rift HMD
 
 ## Free Assets to download from online Store for this game. 
