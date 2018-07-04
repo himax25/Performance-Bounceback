@@ -44,9 +44,13 @@ correct them and improve the performance of this game to play comfortably base o
 >> Saved by batching from 1029 to 1178, and the total number of Batches has been dropped from 640 to 498. However, the frame rate, 47.3 FPS, has still not reached at 90 FPS. 
 
 ## Caching variables and optimizing code
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
+>> <li> <B>Performance tunning action 1. </B> Caching variables:</li>
+>> Changing  . 
+>> <li> <B>Performance tunning action 2. </B> Optimizing code:</li>
+>> Developing <B> Ball.cs </B> script and optimizing <B> Trampoline.cs </B>, <B> GameManager.cs </B> scripts. 
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Caching%20Optimizing%20Screenshot4.JPG)
+>> <li> <B>Result: </B></li>
+>> Saved by batching from 1029 to 1178, and the total number of Batches has been dropped from 640 to 498. However, the frame rate, 47.3 FPS, has still not reached at 90 FPS.
 
 ## Setting up lighting with MSAA
 >> <li> Action Item 1. with screenshots </li>
