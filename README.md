@@ -35,10 +35,13 @@ correct them and improve the performance of this game to play comfortably base o
 >> <li> <B>Result: </B></li>
 >> Saved by batching from 983 to 1029, and the total number of Batches has been dropped from 813 to 640. However, the frame rate, 46.1 FPS, has still not reached at 90 FPS. 
 
-## Creating object pools
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
+## Refactoring Creating algorithm for ball object in the game pool
+>> <li> <B>Performance tunning action 1. </B> Enhacing the algorithm for creating ball objects in the game pool:</li>
+>> Changing the algorithm for creating ball objects in the pool from <B>the balls spawned forever</B> to <B>recycled 20 created balls</B>. 
+>> Enhanced Creating Game object algorithm from recycling 20 occupied balls to 40 occupied balls to slow down the ball generation speed.
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Object%20Pool%20Screenshot3.JPG)
+>> <li> <B>Result: </B></li>
+>> Saved by batching from 1029 to 1178, and the total number of Batches has been dropped from 640 to 498. However, the frame rate, 47.3 FPS, has still not reached at 90 FPS. 
 
 ## Caching variables and optimizing code
 >> <li> Action Item 1. with screenshots </li>
