@@ -47,7 +47,8 @@ correct them and improve the performance of this game to play comfortably base o
 >> <li> <B>Performance tunning action 1. </B> Caching variables:</li>
 >> Changing  . 
 >> <li> <B>Performance tunning action 2. </B> Optimizing code:</li>
->> Developing <B> Ball.cs </B> script and optimizing <B> Trampoline.cs </B>, <B> GameManager.cs </B> scripts. 
+>> There are 4 scripts, <B>GameManager.cs</B>, <b>Trampoline.cs</B>, <B>Ball.cs</B>, and <B>BallSpawner.cs</B>, to refactor for enhancing performance.
+>> And, there is a script, <B>AvatarCalibrator.cs</B>, to create for tracking Oculus Touch Controllers to be assigned to Avatar's hands.  
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Caching%20Optimizing%20Screenshot4.JPG)
 >> <li> <B>Result: </B></li>
 >> Saved by batching from 1029 to 1178, and the total number of Batches has been dropped from 640 to 498. However, the frame rate, 47.3 FPS, has still not reached at 90 FPS.
@@ -84,7 +85,7 @@ There
 * Hyo Lee, linkedin [here](https://www.linkedin.com/in/hyomaxlee/)
  
 ## Versions
-- Unity 2017.2.0f3
+- Unity 2017.2.0f3 /w Oculus Avatar SDK.
 - GVR Unity SDK v1.60.0
 - Oculus Utilities for Unity, OVRPlugin v1.27.0 & Bundled version 1.14.1
 - Test Platform: Windows 10 Home Edition 64 Bit OS /w Oculus Rift HMD
