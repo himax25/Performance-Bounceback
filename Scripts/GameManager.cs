@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour {
 	void Start () 
 	{
 		InitGame();
-		//PlayerPrefs.SetInt("Top Score", 0);	
 	}
 	
 	// Initialize Game
