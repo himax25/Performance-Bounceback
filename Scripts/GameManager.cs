@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour {
 	public bool gameActive;
 	public Text timer_info;
 	public Text score_info;
-	public Text topScore_info;
+	public Text highestScore_info;
+	public BallSpawner ballSpawner;
+	public OVRInput.Controller controllerRight;
 
 	// Use this for initialization
 	void Start () 
@@ -26,7 +28,10 @@ public class GameManager : MonoBehaviour {
 		gameActive = true;
 		score = 0;
 		remainingTime = timer;
+		// Get the highest score to display
 		UpdateTopScore(score);
+		// Clean up all current running balls
+		ballSpawner.ResetBallPool();
 	}
 
 	// Update is called once per frame
@@ -45,14 +50,19 @@ public class GameManager : MonoBehaviour {
 			else
 				timer_info.text = "Timer: " + ((int)remainingTime +1).ToString();
 		}
-		else UpdateTopScore(score);	
+		else UpdateTopScore(score);
+
+		if(OVRInput.GetDown(OVRInput.Button.Two, controllerRight))
+		{
+			InitGame();
+		}
 	}
 
 	void UpdateTopScore(int recordScore)
 	{
-		if (PlayerPrefs.GetInt("Top Score").Equals(null) || PlayerPrefs.GetInt("Top Score") < recordScore)
-		PlayerPrefs.SetInt("Top Score", recordScore);
-		topScore_info.text = "Top Score: " + PlayerPrefs.GetInt("Top Score").ToString();
+		if (PlayerPrefs.GetInt("The highest Score").Equals(null) || PlayerPrefs.GetInt("The highest Score") < recordScore)
+		PlayerPrefs.SetInt("The highest Score", recordScore);
+		highestScore_info.text = "The highest Score: " + PlayerPrefs.GetInt("The highest Score").ToString();
 	}
 	public void GetScore(int po)
 	{

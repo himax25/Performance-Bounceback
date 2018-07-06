@@ -64,4 +64,12 @@ public class BallSpawner : MonoBehaviour
         }
         ballPoolNum = 0;
     }
+    public void ResetBallPool()
+    {
+        for (int i=0; i< ball.Count; i++)
+        {
+            ball[i].gameObject.SetActive(false);
+            ball[i].ballStopped = true; 
+        }
+    }
 }
