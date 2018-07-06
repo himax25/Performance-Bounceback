@@ -1,6 +1,19 @@
 # Udacity High Immersion Project - Tunning up Performance Bounceback game.  
-This is the 2nd project for High Immersion Unity VR at HMD VR Projects at Udacity to build up the fine performance Bounceback game.
-The major mission of this project is to use profiler tools to identify promblemetic code, 
+This is the 2nd project for tunning up the performance of Bounceback game at High Immersion Unity with Oculus' Rift HMD at 3D VR development course in Udacity.
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/BallBouncebackGame%20Screenshot0.JPG)
+## How to play the Game
+1. Make many balls bounces with Trampolines to get a score in given time.
+2. Grab a ball, generated every 0.5 sec, and throw the ball to Trampolines.
+3. Press <b>B</b> button to Reset the game.
+4. Press <b>Menu</b> button on the right cotroller to Exit the game.
+
+## new features to add on this Game
+1. Local Avatar with Oculus Touch Controllers to play the game.
+2. Recoding the highest score in the local computer.
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/BallBouncebackGame%20Screenshot1.JPG)
+
+## The key objective of this project
+The major mission of this performance tuning project is to use profiler tools to identify problematic code, 
 correct them and improve the performance of this game to play comfortably base on the following 8 checking and correcting items on this game:
 * Reducing draw calls by using static and dynamic batching
 * Optimizing Physics
@@ -10,12 +23,7 @@ correct them and improve the performance of this game to play comfortably base o
 * Baking lighting
 * Using light probes
 * Using the profiler for performance optimization
-
-## How to play the Game
-1. 
-2. 
-3. 
-
+ 
 # How to tune the performance of this game up
 ## Reducing draw calls by enabling both static and dynamic batching
 >> <li> <B>Performance tunning action 1. </B> Enabling Static batching at all grounded and non-moving objects:</li>
@@ -45,13 +53,14 @@ correct them and improve the performance of this game to play comfortably base o
 
 ## Caching variables and optimizing code
 >> <li> <B>Performance tunning action 1. </B> Caching variables:</li>
->> Changing  . 
->> <li> <B>Performance tunning action 2. </B> Optimizing code:</li>
+>> Refactoring scripts to minimize to use Update, Start functions, and directly invoke Getcomponent functions massively: <b>BallSpawner.cs</b>, <b>Ball.cs</b>, and <b>Trampoline.cs</B>.
+>> Geting rid of unnecersly debuging log functions from scripts: <b>Ball.cs</b>, <b>BallSpawner.cs</b>, <b>GameManager.cs</b>, <b>PlatformIdManager.cs</b>, and <b>Trampoline.cs</b>. 
+>> <li> <B>Performance tuning action 2. </B> Optimizing code:</li>
 >> There are 4 scripts, <B>GameManager.cs</B>, <b>Trampoline.cs</B>, <B>Ball.cs</B>, and <B>BallSpawner.cs</B>, to refactor for enhancing performance.
 >> And, there is a script, <B>AvatarCalibrator.cs</B>, to create for tracking Oculus Touch Controllers to be assigned to Avatar's hands.  
-![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Caching%20Optimizing%20Screenshot4.JPG)
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Code%20Screenshot4.JPG)
 >> <li> <B>Result: </B></li>
->> Saved by batching from 1029 to 1178, and the total number of Batches has been dropped from 640 to 498. However, the frame rate, 47.3 FPS, has still not reached at 90 FPS.
+>> Saved by batching from 1178 to 829, and the total number of Batches has been dropped from 498 to 413. Finally, the frame rate, 103.8 FPS, has upper reached at 90 FPS.
 
 ## Setting up lighting with MSAA
 >> <li> Action Item 1. with screenshots </li>
@@ -85,9 +94,11 @@ There
 * Hyo Lee, linkedin [here](https://www.linkedin.com/in/hyomaxlee/)
  
 ## Versions
-- Unity 2017.2.0f3 /w Oculus Avatar SDK.
+- Unity 2017.2.0f3
 - GVR Unity SDK v1.60.0
-- Oculus Utilities for Unity, OVRPlugin v1.27.0 & Bundled version 1.14.1
+- Oculus Utilities v1.25.1 
+- OVRPlugin v1.27.0 & Bundled version 1.14.1 
+- Oculus Avartar SDK v1.28.0
 - Test Platform: Windows 10 Home Edition 64 Bit OS /w Oculus Rift HMD
 
 ## Free Assets to download from online Store for this game. 
