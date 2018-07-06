@@ -7,7 +7,7 @@ This is the 2nd project for tunning up the performance of Bounceback game at Hig
 3. Press <b>B</b> button to Reset the game.
 4. Press <b>Menu</b> button on the right cotroller to Exit the game.
 
-## new features to add on this Game
+## New features to add on this Game
 1. Local Avatar with Oculus Touch Controllers to play the game.
 2. Recoding the highest score in the local computer.
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/BallBouncebackGame%20Screenshot1.JPG)
@@ -102,9 +102,7 @@ There
 - Test Platform: Windows 10 Home Edition 64 Bit OS /w Oculus Rift HMD
 
 ## Free Assets to download from online Store for this game. 
-- Downloaded prefabs from Unity Asset Store;
->> (1) Tube constructor Kit prefabs, Environments, Urban, https://deployer117.deviantart.com/
-- Download FX Sound from Unity Asset Store;
->> (1) FREE Casual Game SFX Pack from dustyroom.com, UX/UI sounds, 24-bit WAV format, 44.1 kHz Stereo.
+- ownload Oculus SDK Package v1.27.0 and v1.28.0 from Oculus website;
+>> (1) Oculus Avartar SDK and Oculus Intergration SDK scripts for OVRPlayer Controllers and OVRCameraRig
 - Download Background Music from Unity Asset Store;
 >> (1) Absolutely Free Music, Vertex Studio
