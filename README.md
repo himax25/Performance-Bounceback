@@ -60,7 +60,7 @@ correct them and improve the performance of this game to play comfortably base o
 >> And, there is a script, <B>AvatarCalibrator.cs</B>, to create for tracking Oculus Touch Controllers to be assigned to Avatar's hands.  
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Code%20Screenshot4.JPG)
 >> <li> <B>Result: </B></li>
->> Saved by batching from 1178 to 829, and the total number of Batches has been dropped from 498 to 413. Finally, the frame rate, 103.8 FPS, has upper reached at 90 FPS.
+>> Saved by batching from 1178 to 829, and the total number of Batches has been dropped from 498 to 413. Finally, the frame rate, 103.8 FPS, has reached over 90 FPS.
 
 ## Setting up lighting with MSAA
 >> <li> Action Item 1. with screenshots </li>
