@@ -1,5 +1,5 @@
 # Udacity High Immersion Project - Tunning up Performance Bounceback game.  
-This is the 2nd project for tuning up the performance of Bounceback game at High Immersion Unity with Oculus' Rift HMD at 3D VR development course in Udacity.
+This is the 2nd project for tuning up the performance of Bounceback game at High Immersion Unity 3D VR development course in Udacity.
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/BallBouncebackGame%20Screenshot0.JPG)
 ## How to play the Game
 1. Make many balls bounces with Trampolines to get a score in given time.
