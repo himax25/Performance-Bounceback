@@ -6,7 +6,7 @@ This is the 2nd project for tuning up the performance of Bounceback game at High
 2. Grab a ball, generated every 0.5 sec, and throw the ball to Trampolines.
 3. Press <b>B</b> button to Reset the game.
 4. Press <b>Menu</b> button on the right cotroller to Exit the game.
-![youtubelink](https://github.com/himax25/RubeGoldbergGameVR-HMD-/blob/master/Screenshot%20of%20Youtube.PNG)[for playing Youtube video here](https://youtu.be/S4AoDI8p_FQ)
+![youtubelink](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/YouTubesitelink.JPG)[for playing Youtube video here](https://youtu.be/Wb9o5GQAqC8)
 
 ## New features to add on this Game
 1. Local Avatar with Oculus Touch Controllers to play the game.
@@ -79,9 +79,12 @@ correct them and improve the performance of this game to play comfortably base o
 It takes 35 hours to turn up this project.
 
 ## Major challenges in this project.
-There 
-
+There were a challenges to build up this game: 
+>> <li> <B>1. To configure a visual controller for Oculus Touch controllers in this game; </B></li> 
+>> The are many prefabs and Mesh for SteamVR with Oculus. However, there are few prefabs and Mesh for Oculus' Touch Controllers and they are not free of charge asset for. I lucky found out such local avatar SDK from Oculus website to build this game with.
+>>
 # Conclusion
+It is a pretty tough objective to satisfy that is enhancing the game performance with maintaining the visual quality assurance of this game. I was able to achieve obtaining more than 90FPS performance but unable to get less than 100 draw calls to sustain during playing this game. I need to give up some performance related some visual effects in this game.   
 
 ## **Author of this coding**
 * Hyo Lee, linkedin [here](https://www.linkedin.com/in/hyomaxlee/)
