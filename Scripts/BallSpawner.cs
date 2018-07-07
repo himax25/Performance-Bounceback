@@ -5,9 +5,9 @@ using UnityEngine;
 public class BallSpawner : MonoBehaviour 
 {
     public static BallSpawner current;
-
+    public GameManager gameManager;
     public GameObject pooledBall; //the prefab of the object in the object pool
-    public int ballsAmount = 40; //the number of objects you want in the object pool
+    public int ballsAmount = 20; //the number of objects you want in the object pool
     public List<Ball> ball; //the object pool
     public static int ballPoolNum = 0; //a number used to cycle through the pooled objects
 
@@ -39,7 +39,7 @@ public class BallSpawner : MonoBehaviour
 	void Update () 
     {
             cooldown -= Time.deltaTime;
-            if(cooldown <= 0)
+            if(cooldown <= 0 && gameManager.gameActive )
             {
                 // Reset the timer at every 30 sec. by checking out cooldownLength 0.5f and create a newBall.
                 cooldown = cooldownLength; 
