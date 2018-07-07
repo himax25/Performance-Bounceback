@@ -1,11 +1,12 @@
 # Udacity High Immersion Project - Tunning up Performance Bounceback game.  
-This is the 2nd project for tunning up the performance of Bounceback game at High Immersion Unity with Oculus' Rift HMD at 3D VR development course in Udacity.
+This is the 2nd project for tuning up the performance of Bounceback game at High Immersion Unity with Oculus' Rift HMD at 3D VR development course in Udacity.
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/BallBouncebackGame%20Screenshot0.JPG)
 ## How to play the Game
 1. Make many balls bounces with Trampolines to get a score in given time.
 2. Grab a ball, generated every 0.5 sec, and throw the ball to Trampolines.
 3. Press <b>B</b> button to Reset the game.
 4. Press <b>Menu</b> button on the right cotroller to Exit the game.
+![youtubelink](https://github.com/himax25/RubeGoldbergGameVR-HMD-/blob/master/Screenshot%20of%20Youtube.PNG)[for playing Youtube video here](https://youtu.be/S4AoDI8p_FQ)
 
 ## New features to add on this Game
 1. Local Avatar with Oculus Touch Controllers to play the game.
@@ -26,25 +27,25 @@ correct them and improve the performance of this game to play comfortably base o
  
 # How to tune the performance of this game up
 ## Reducing draw calls by enabling both static and dynamic batching
->> <li> <B>Performance tunning action 1. </B> Enabling Static batching at all grounded and non-moving objects:</li>
+>> <li> <B>Performance tuning action 1. </B> Enabling Static batching at all grounded and non-moving objects:</li>
 >> 288 Grounded Trampoline objects, Platform, Ground, Factory structure, Cube, and Ball Spawner. 
->> <li> <B>Performance tunning action 2. </B> Enabling Dynamic batching at all moving objects:</li>
+>> <li> <B>Performance tuning action 2. </B> Enabling Dynamic batching at all moving objects:</li>
 >> 48 Air Trampoline objects, Lights, and Camera. 
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Enabling%20batching%20Screenshot1.JPG)
 >> <li> <B>Result: </B></li>
 >> Saved by batching from 0 to 983, and the total number of Batches has been dropped from 1904 to 813. However, the frame rate, 45.4 FPS, has still not reached at 90 FPS. 
 
 ## Reducing calculation time by optimizing Physics with Rigidbody components
->> <li> <B>Performance tunning action 1. </B> Removing Rigidbody component from all Static collider game objects:</li>
+>> <li> <B>Performance tuning action 3. </B> Removing Rigidbody component from all Static collider game objects:</li>
 >> 288 Grounded Trampoline objects. 
->> <li> <B>Performance tunning action 2. </B> Adding Rigidibody component on all moving collider game objects:</li>
+>> <li> <B>Performance tuning action 4. </B> Adding Rigidibody component on all moving collider game objects:</li>
 >> 48 Air Trampoline objects. 
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Physics%20Screenshot2.JPG)
 >> <li> <B>Result: </B></li>
 >> Saved by batching from 983 to 1029, and the total number of Batches has been dropped from 813 to 640. However, the frame rate, 46.1 FPS, has still not reached at 90 FPS. 
 
 ## Refactoring Creating algorithm for ball object in the game pool
->> <li> <B>Performance tunning action 1. </B> Enhacing the algorithm for creating ball objects in the game pool:</li>
+>> <li> <B>Performance tuning action 5. </B> Enhacing the algorithm for creating ball objects in the game pool:</li>
 >> Changing the algorithm for creating ball objects in the pool from <B>the balls spawned forever</B> to <B>recycled 20 created balls</B>. 
 >> Enhanced Creating Game object algorithm from recycling 20 occupied balls to 40 occupied balls to slow down the ball generation speed.
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Object%20Pool%20Screenshot3.JPG)
@@ -52,38 +53,30 @@ correct them and improve the performance of this game to play comfortably base o
 >> Saved by batching from 1029 to 1178, and the total number of Batches has been dropped from 640 to 498. However, the frame rate, 47.3 FPS, has still not reached at 90 FPS. 
 
 ## Caching variables and optimizing code
->> <li> <B>Performance tunning action 1. </B> Caching variables:</li>
+>> <li> <B>Performance tuning action 6. </B> Caching variables:</li>
 >> Refactoring scripts to minimize to use Update, Start functions, and directly invoke Getcomponent functions massively: <b>BallSpawner.cs</b>, <b>Ball.cs</b>, and <b>Trampoline.cs</B>.
 >> Geting rid of unnecersly debuging log functions from scripts: <b>Ball.cs</b>, <b>BallSpawner.cs</b>, <b>GameManager.cs</b>, <b>PlatformIdManager.cs</b>, and <b>Trampoline.cs</b>. 
->> <li> <B>Performance tuning action 2. </B> Optimizing code:</li>
+>> <li> <B>Performance tuning action 7. </B> Optimizing code:</li>
 >> There are 4 scripts, <B>GameManager.cs</B>, <b>Trampoline.cs</B>, <B>Ball.cs</B>, and <B>BallSpawner.cs</B>, to refactor for enhancing performance.
 >> And, there is a script, <B>AvatarCalibrator.cs</B>, to create for tracking Oculus Touch Controllers to be assigned to Avatar's hands.  
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Code%20Screenshot4.JPG)
 >> <li> <B>Result: </B></li>
 >> Saved by batching from 1178 to 829, and the total number of Batches has been dropped from 498 to 413. Finally, the frame rate, 103.8 FPS, has reached over 90 FPS.
 
-## Setting up lighting with MSAA
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
-
-## Baking lighting
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
-
-## Using light probes
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
-
+## Optimizing all lighting by changing Lighting rendering path with MSAA, Performant Lighting mode, Baking lighting, and using light probes. 
+>> <li> <B>Performance tuning action 8. </B> Changing Lighting rendering path from <B>Deferred</B> to <B>Forward</B> with supporting MSAA</li>
+>> <li> <B>Performance tuning action 9. </B> Changing Performant Lighting mode from <B>Realtime</B> to <B>Mixed</B> mode</li>
+>> <li> <B>Performance tuning action 10. </B> Applyinging the <B>global illumination baking</B> with lightmaps</li>
+>> <li> <B>Performance tuning action 11. </B> Applying <B>light probes group</B> with point lights<li>
+ 
 ## Using the profiler for performance optimization 
->> <li> Action Item 1. with screenshots </li>
->> <li> ![screenshot](https://github.com/himax25/Performance-Bounceback/Screenshot1.PNG) </li>
->> <li> Action Item 2. with screenshots </li>
+>> <li> <B> Performance tuning action. </B> Using Oculus' profiler & Unity's profiler to monitor and optimize the game performance with above action 8,9, 10, and 11. </li>
+![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Lighting%20Screenshot5.JPG)
+>> <li> <B>Result: </B></li>
+>> Draw call had dropped from 931 to 375 with 98.1 FPS.
 
 ## The period of developing
-It takes 25 hours to turn up this project.
+It takes 35 hours to turn up this project.
 
 ## Major challenges in this project.
 There 
