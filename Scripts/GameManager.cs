@@ -38,7 +38,6 @@ public class GameManager : MonoBehaviour {
 	{
 		if (gameActive)
 		{
-			score_info.text = "Score: " + score.ToString();
 			remainingTime = remainingTime - Time.deltaTime;
 			if(remainingTime <= 0)
 			{
@@ -66,6 +65,9 @@ public class GameManager : MonoBehaviour {
 	public void GetScore(int po)
 	{
 		if (gameActive)
-		score = score + po;
+		{
+			score = score + po;
+			score_info.text = "Score: " + score.ToString();
+		}			
 	}
 }
