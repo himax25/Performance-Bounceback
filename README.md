@@ -72,8 +72,8 @@ correct them and improve the performance of this game to play comfortably base o
 >> <li> <B>Performance tuning action 9. </B> Changing Lighting rendering path from <B>Deferred</B> to <B>Forward</B> with supporting MSAA</li>
 >> <li> <B>Performance tuning action 10. </B> Changing Performant Lighting mode from <B>Realtime</B> to either <B>Mixed</B> mode or <B>Baked</B> mode.</li>
 >> <li> <B>Performance tuning action 11. </B> Applyinging the <B>global illumination baking</B> with lightmaps</li>
->> <li> <B>Performance tuning action 12. </B> Applying <B>light probes group</B> with point lights<li>
- 
+>> <li> <B>Performance tuning action 12. </B> Applying <B>light probes group</B> with point lights</li>
+
 ## Using the profiler for performance optimization 
 >> <li> <B> Performance tuning action. </B> Using Oculus' profiler & Unity's profiler to monitor and optimize the game performance with above action 9, 10, 11, and 12. </li>
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Lighting%20Screenshot5.JPG)
