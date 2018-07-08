@@ -36,7 +36,7 @@ correct them and improve the performance of this game to play comfortably base o
 >> Saved by batching from 0 to 983, and the total number of Batches has been dropped from 1904 to 813. However, the frame rate, 45.4 FPS, has still not reached at 90 FPS. 
 
 ## Adjusting Physics update rate
->> <li> <B>Performance tuning action 3. <B> Adjsting Physics update rate from 0.005555556 to 0.01111111 Fixed Timestep in order to match with the VR framerate 90 FPS. 
+>> <li> <B>Performance tuning action 3. </B> Adjsting Physics update rate from 0.005555556 to 0.01111111 Fixed Timestep in order to match with the VR framerate 90 FPS. 
  ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/PhysicsUpdateRateScreenshot.JPG)
 
 ## Reducing calculation time by optimizing Physics with Rigidbody components
@@ -78,7 +78,7 @@ correct them and improve the performance of this game to play comfortably base o
 >> <li> <B> Performance tuning action. </B> Using Oculus' profiler & Unity's profiler to monitor and optimize the game performance with above action 9, 10, 11, and 12. </li>
 ![screenshot](https://github.com/himax25/Performance-Bounceback/blob/master/Screenshots/Optimizing%20Lighting%20Screenshot5.JPG)
 >> <li> <B>Result: </B></li>
->> Draw call had dropped from 931 to 375 with 98.1 FPS.
+>> Draw call had dropped from 931 to 190 with 99.3 FPS.
 
 ## The period of developing
 It takes 35 hours to turn up this project.
